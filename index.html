@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I LOVE YOU</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            50% {
+                transform: translateX(50%) translateY(-50%);
+            }
+
+            100% {
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #love {
+            font-size: 36px;
+            font-weight: bold;
+            color: red;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            animation: move 5s ease-in-out infinite, rotate 7s linear infinite, blink 4s ease infinite;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        input{
+            font-size:larger;
+            width:250px;
+            height:50px;
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="love">I LOVE YOU <figure>
+    
+                                  <figcaption>Amisha</figcaption>
+</figure></div>
+    <div id="love">
+        itna ki tum apne aap se bhi nhi ki hogi re
+        <br /><br />
+        <h4>Reply With only your heart in text box</h4><input type="type" name="name" />
+    </div>
+
+</body>
+</html>
